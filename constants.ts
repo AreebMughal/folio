@@ -59,13 +59,13 @@ export interface IProject {
 
 export const PROJECTS: IProject[] = [
   {
-    name: 'FigGen - Figma to Code converter',
+    name: 'Monitair - Health Care',
     image: '/projects/figgen.jpg',
     blurImage: '/projects/blur/figgen-blur.jpg',
-    description: 'Pixel perfect HTML/Tailwind for Figma Auto layout designs.',
+    description: 'A system to manage PAP/NIV for chronic sleep apnea patients',
     gradient: ['#1F6582', '#1ABCFE'],
     url: 'https://www.figma.com/community/plugin/1065278044402066626',
-    tech: ['typescript', 'figma', 'tailwind']
+    tech: ['typescript', 'nest', 'next', 'tailwind']
   },
   {
     name: 'myOKR Website',
