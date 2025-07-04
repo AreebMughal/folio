@@ -1,12 +1,6 @@
-// Copyright Ayush Singh 2021,2022. All Rights Reserved.
-// Project: folio
-// Author contact: https://www.linkedin.com/in/alphaayush/
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
-import { gsap, Linear } from "gsap";
-import React, { MutableRefObject, useEffect, useRef, useState } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap, Linear } from 'gsap';
+import React, { MutableRefObject, useEffect, useRef, useState } from 'react';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const AboutSection = () => {
   const quoteRef: MutableRefObject<HTMLDivElement> = useRef(null);
@@ -19,66 +13,44 @@ const AboutSection = () => {
     targetSection: MutableRefObject<HTMLDivElement>
   ): ScrollTrigger => {
     const timeline = gsap.timeline({
-      defaults: { ease: Linear.easeNone, duration: 0.1 },
+      defaults: { ease: Linear.easeNone, duration: 0.1 }
     });
     timeline
-      .fromTo(
-        quoteRef.current.querySelector(".about-1"),
-        { opacity: 0.2 },
-        { opacity: 1 }
-      )
-      .to(quoteRef.current.querySelector(".about-1"), {
+      .fromTo(quoteRef.current.querySelector('.about-1'), { opacity: 0.2 }, { opacity: 1 })
+      .to(quoteRef.current.querySelector('.about-1'), {
         opacity: 0.2,
-        delay: 0.5,
+        delay: 0.5
       })
-      .fromTo(
-        quoteRef.current.querySelector(".about-2"),
-        { opacity: 0.2 },
-        { opacity: 1 },
-        "<"
-      )
-      .to(quoteRef.current.querySelector(".about-2"), {
+      .fromTo(quoteRef.current.querySelector('.about-2'), { opacity: 0.2 }, { opacity: 1 }, '<')
+      .to(quoteRef.current.querySelector('.about-2'), {
         opacity: 0.2,
-        delay: 1,
+        delay: 1
       });
 
     const scrollTriggerInstance = ScrollTrigger.create({
       trigger: targetSection.current,
-      start: "center 80%",
-      end: "center top",
+      start: 'center 80%',
+      end: 'center top',
       scrub: 0,
       animation: timeline,
-      onToggle: (self) => setwillChange(self.isActive),
+      onToggle: (self) => setwillChange(self.isActive)
     });
     return scrollTriggerInstance;
   };
 
   useEffect(() => {
-    const aboutScrollTriggerInstance = initAboutAnimation(
-      quoteRef,
-      targetSection
-    );
+    const aboutScrollTriggerInstance = initAboutAnimation(quoteRef, targetSection);
 
     return aboutScrollTriggerInstance.kill;
   }, [quoteRef, targetSection]);
 
   const renderQuotes = (): React.ReactNode => (
     <h1 ref={quoteRef} className="font-medium text-3xl sm:text-4xl md:text-6xl">
-      <span
-        className={`about-1 leading-tight ${
-          willChange ? "will-change-opacity" : ""
-        }`}
-      >
-        I am a passionate UI Engineer who bridges the gap between development
-        and design.{" "}
+      <span className={`about-1 leading-tight ${willChange ? 'will-change-opacity' : ''}`}>
+        I am a passionate UI Engineer who bridges the gap between development and design.{' '}
       </span>
-      <span
-        className={`about-2 leading-tight ${
-          willChange ? "will-change-opacity" : ""
-        }`}
-      >
-        I take responsibility to craft a good user experience using modern
-        frontend architecture.
+      <span className={`about-2 leading-tight ${willChange ? 'will-change-opacity' : ''}`}>
+        I take responsibility to craft a good user experience using modern frontend architecture.
       </span>
     </h1>
   );
