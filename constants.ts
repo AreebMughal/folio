@@ -66,7 +66,7 @@ export const PROJECTS: IProject[] = [
     blurImage: '/projects/blur/figgen-blur.jpg',
     description: 'A system to manage PAP/NIV for chronic sleep apnea patients',
     gradient: ['#1F6582', '#1ABCFE'],
-    url: 'https://www.figma.com/community/plugin/1065278044402066626',
+    url: 'https://www.monitairhealth.com/',
     tech: [SKILLS_ENUM.TYPESCRIPT, SKILLS_ENUM.NESTJS, SKILLS_ENUM.MONGODB, SKILLS_ENUM.NEXT, SKILLS_ENUM.TAILWIND]
   },
   {
@@ -75,7 +75,7 @@ export const PROJECTS: IProject[] = [
     blurImage: '/projects/blur/myokr-blur.jpg',
     description: 'Build Invoices, Track Payments, and Manage Clients with ease',
     gradient: ['#153BB9', '#0E2C8B'],
-    url: 'https://www.huminos.com/',
+    url: 'https://app.my-quicksteps.com/',
     tech: [SKILLS_ENUM.TYPESCRIPT, SKILLS_ENUM.NESTJS, SKILLS_ENUM.NEXT, SKILLS_ENUM.POSTGRESQL, SKILLS_ENUM.TAILWIND]
   }
   // {
