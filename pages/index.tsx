@@ -71,11 +71,11 @@ export default function Home() {
         <main className="flex-col flex">
           {renderBackdrop()}
           <HeroSection />
-          {/* <AboutSection /> */}
-          {/* <ProjectsSection isDesktop={isDesktop} /> */}
-          {/* <QuoteSection /> */}
+          <AboutSection />
+          <ProjectsSection isDesktop={isDesktop} />
+          <QuoteSection />
           <SkillsSection />
-          <TimelineSection isDesktop={isDesktop} />
+          {/* <TimelineSection isDesktop={isDesktop} /> */}
           <CollaborationSection />
           <Footer />
         </main>
