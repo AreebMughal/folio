@@ -169,12 +169,71 @@ export const PROJECTS: IProject[] = [
 ];
 
 export const SKILLS = {
-  backend: ['nodejs', 'express', 'nest', 'python', 'graphql'],
-  database: ['mongodb', 'postgresql', 'mysql', 'redis'],
-  frontend: ['javascript', 'react', 'redux', 'next', 'angular', 'gsap', 'tailwind', 'sass', 'svg', 'html', 'css'],
+  backend: ['javascript', 'typescript', 'nodejs', 'express', 'nestjs', 'graphql', 'python', 'flask', 'sockets'],
+  database: ['mongodb', 'postgresql', 'mysql', 'redis', 'firebase'],
+  frontend: [
+    'javascript',
+    'typescript',
+    'react',
+    'next',
+    'redux',
+    'react-query',
+    'tailwind',
+    'mui',
+    'antd',
+    'svg',
+    'html',
+    'css',
+    'sass'
+  ],
   cloud: ['aws', 'ec2', 'lambda', 'gcp', 'docker'],
-  thirdPartyIntegration: ['stripe', 'sendgrid', 'twilio', 'firebase', 'sns', 's3', 'ses', 'sqs'],
-  other: ['git', 'github', 'webpack', 'postman']
+  integration: ['stripe', 'sendgrid', 'twilio', 'aws-lambda', 'aws-sns', 'aws-s3', 'aws-ses', 'aws-sqs'],
+  other: ['git', 'github', 'postman', 'jira', 'nginx', 'clickup']
+};
+
+export const SKILLS_MAP: Record<string, string> = {
+  javascript: 'JavaScript',
+  typescript: 'TypeScript',
+  nodejs: 'Node.js',
+  express: 'Express.js',
+  nestjs: 'NestJS',
+  graphql: 'GraphQL',
+  python: 'Python',
+  flask: 'Flask',
+  sockets: 'Socket.IO',
+  mongodb: 'MongoDB',
+  postgresql: 'PostgreSQL',
+  mysql: 'MySQL',
+  redis: 'Redis',
+  react: 'React',
+  next: 'Next.js',
+  redux: 'Redux',
+  angular: 'Angular',
+  html: 'HTML',
+  css: 'CSS',
+  sass: 'Sass',
+  tailwind: 'Tailwind CSS',
+  mui: 'Material UI',
+  antd: 'AntDesign',
+  gsap: 'GSAP',
+  svg: 'SVG',
+  stripe: 'Stripe',
+  sendgrid: 'SendGrid',
+  twilio: 'Twilio',
+  firebase: 'Firebase',
+  docker: 'Docker',
+  trello: 'Trello',
+  postman: 'Postman',
+  git: 'Git',
+  github: 'GitHub',
+  aws: 'AWS',
+  'aws-ec2': 'AWS EC2',
+  'aws-lambda': 'AWS Lambda',
+  'aws-s3': 'AWS S3',
+  'aws-sns': 'AWS SNS',
+  'aws-ses': 'AWS SES',
+  'aws-sqs': 'AWS SQS',
+  'react-query': 'React Query'
 };
 
 export enum Branch {
