@@ -1,3 +1,5 @@
+import { SKILLS_ENUM } from 'enum';
+
 export const METADATA = {
   title: 'Areeb Arshad | Portfolio',
   description:
@@ -60,21 +62,21 @@ export interface IProject {
 export const PROJECTS: IProject[] = [
   {
     name: 'Monitair - Health Care',
-    image: '/projects/figgen.jpg',
+    image: '/projects/monitair.png',
     blurImage: '/projects/blur/figgen-blur.jpg',
     description: 'A system to manage PAP/NIV for chronic sleep apnea patients',
     gradient: ['#1F6582', '#1ABCFE'],
     url: 'https://www.figma.com/community/plugin/1065278044402066626',
-    tech: ['typescript', 'nest', 'next', 'tailwind']
+    tech: [SKILLS_ENUM.TYPESCRIPT, SKILLS_ENUM.NESTJS, SKILLS_ENUM.MONGODB, SKILLS_ENUM.NEXT, SKILLS_ENUM.TAILWIND]
   },
   {
-    name: 'myOKR Website',
-    image: '/projects/myokr.jpg',
+    name: 'My QuickSteps',
+    image: '/projects/quick-steps-dashboard.png',
     blurImage: '/projects/blur/myokr-blur.jpg',
-    description: 'Marketing site for OKR Platform by huminos',
+    description: 'Build Invoices, Track Payments, and Manage Clients with ease',
     gradient: ['#153BB9', '#0E2C8B'],
     url: 'https://www.huminos.com/',
-    tech: ['react', 'next', 'gsap', 'tailwind']
+    tech: [SKILLS_ENUM.TYPESCRIPT, SKILLS_ENUM.NESTJS, SKILLS_ENUM.NEXT, SKILLS_ENUM.POSTGRESQL, SKILLS_ENUM.TAILWIND]
   }
   // {
   //   name: 'DLT Labs Website',
@@ -169,29 +171,55 @@ export const PROJECTS: IProject[] = [
 ];
 
 export const SKILLS = {
-  backend: ['javascript', 'typescript', 'nodejs', 'express', 'nestjs', 'graphql', 'python', 'flask', 'sockets'],
-  database: ['mongodb', 'postgresql', 'mysql', 'redis', 'firebase'],
-  frontend: [
-    'javascript',
-    'typescript',
-    'react',
-    'next',
-    'redux',
-    'react-query',
-    'tailwind',
-    'mui',
-    'antd',
-    'svg',
-    'html',
-    'css',
-    'sass'
+  backend: [
+    SKILLS_ENUM.JAVASCRIPT,
+    SKILLS_ENUM.TYPESCRIPT,
+    SKILLS_ENUM.NODEJS,
+    SKILLS_ENUM.EXPRESS,
+    SKILLS_ENUM.NESTJS,
+    SKILLS_ENUM.GRAPHQL,
+    SKILLS_ENUM.PYTHON,
+    SKILLS_ENUM.FLASK,
+    SKILLS_ENUM.SOCKETS
   ],
-  cloud: ['aws', 'ec2', 'lambda', 'gcp', 'docker'],
-  integration: ['stripe', 'sendgrid', 'twilio', 'aws-lambda', 'aws-sns', 'aws-s3', 'aws-ses', 'aws-sqs'],
-  other: ['git', 'github', 'postman', 'jira', 'nginx', 'clickup']
+  database: [SKILLS_ENUM.MONGODB, SKILLS_ENUM.POSTGRESQL, SKILLS_ENUM.MYSQL, SKILLS_ENUM.REDIS, SKILLS_ENUM.FIREBASE],
+  frontend: [
+    SKILLS_ENUM.JAVASCRIPT,
+    SKILLS_ENUM.TYPESCRIPT,
+    SKILLS_ENUM.REACT,
+    SKILLS_ENUM.NEXT,
+    SKILLS_ENUM.REDUX,
+    SKILLS_ENUM.REACT_QUERY,
+    SKILLS_ENUM.TAILWIND,
+    SKILLS_ENUM.MUI,
+    SKILLS_ENUM.ANTD,
+    SKILLS_ENUM.SVG,
+    SKILLS_ENUM.HTML,
+    SKILLS_ENUM.CSS,
+    SKILLS_ENUM.SASS
+  ],
+  cloud: [SKILLS_ENUM.AWS, SKILLS_ENUM.EC2, SKILLS_ENUM.LAMBDA, SKILLS_ENUM.GCP, SKILLS_ENUM.DOCKER],
+  integration: [
+    SKILLS_ENUM.STRIPE,
+    SKILLS_ENUM.SENDGRID,
+    SKILLS_ENUM.TWILIO,
+    SKILLS_ENUM.AWS_LAMBDA,
+    SKILLS_ENUM.AWS_SNS,
+    SKILLS_ENUM.AWS_S3,
+    SKILLS_ENUM.AWS_SES,
+    SKILLS_ENUM.AWS_SQS
+  ],
+  other: [
+    SKILLS_ENUM.GIT,
+    SKILLS_ENUM.GITHUB,
+    SKILLS_ENUM.POSTMAN,
+    SKILLS_ENUM.JIRA,
+    SKILLS_ENUM.NGINX,
+    SKILLS_ENUM.CLICKUP
+  ]
 };
 
-export const SKILLS_MAP: Record<string, string> = {
+export const SKILLS_MAP: Record<SKILLS_ENUM, string> = {
   javascript: 'JavaScript',
   typescript: 'TypeScript',
   nodejs: 'Node.js',
@@ -233,7 +261,11 @@ export const SKILLS_MAP: Record<string, string> = {
   'aws-sns': 'AWS SNS',
   'aws-ses': 'AWS SES',
   'aws-sqs': 'AWS SQS',
-  'react-query': 'React Query'
+  'react-query': 'React Query',
+  gcp: 'Google Cloud',
+  jira: 'Jira',
+  nginx: 'Nginx',
+  clickup: 'ClickUp'
 };
 
 export enum Branch {
