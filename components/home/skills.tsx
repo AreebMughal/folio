@@ -14,7 +14,7 @@ const Tooltip = ({ children, text }: { children: React.ReactNode; text: string }
     <div className="relative inline-block group">
       {children}
       <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 mt-1 px-[0.8rem] py-[0.4rem] bg-white text-gray-800 !text-sm rounded-full shadow-lg border border-gray-200 whitespace-nowrap z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-        {SKILLS_MAP[text] || text}
+        {SKILLS_MAP[text as keyof typeof SKILLS_MAP] || text}
         <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-b-white"></div>
       </div>
     </div>
