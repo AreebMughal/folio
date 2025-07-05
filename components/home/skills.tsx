@@ -1,4 +1,4 @@
-import { MENULINKS, SKILLS } from '../../constants';
+import { MENULINKS, SKILLS, SKILLS_MAP } from '../../constants';
 import Image from 'next/image';
 import { MutableRefObject, useEffect, useRef, useState } from 'react';
 import { gsap, Linear } from 'gsap';
@@ -13,8 +13,8 @@ const Tooltip = ({ children, text }: { children: React.ReactNode; text: string }
   return (
     <div className="relative inline-block group">
       {children}
-      <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 mt-2 px-4 py-2 bg-white text-gray-800 text-sm font-medium rounded-full shadow-lg border border-gray-200 whitespace-nowrap z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-        {text}
+      <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 mt-1 px-[0.8rem] py-[0.4rem] bg-white text-gray-800 !text-sm rounded-full shadow-lg border border-gray-200 whitespace-nowrap z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        {SKILLS_MAP[text] || text}
         <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-b-white"></div>
       </div>
     </div>
@@ -70,16 +70,8 @@ const SkillsSection = () => {
       <h3 className={SKILL_STYLES.SKILL_TITLE}>{title}</h3>
       <div className={`flex flex-wrap seq ${willChange ? 'will-change-opacity' : ''}`}>
         {skills.map((skill) => (
-          <Tooltip key={skill} text={skill.toUpperCase()}>
-            <Image
-              key={skill}
-              src={`/skills/${skill}.svg`}
-              alt={skill}
-              width={76}
-              height={76}
-              className="skill"
-              data-tooltip={skill.toLocaleUpperCase()}
-            />
+          <Tooltip key={skill} text={skill}>
+            <Image key={skill} src={`/skills/${skill}.svg`} alt={skill} width={76} height={76} className="skill" />
           </Tooltip>
         ))}
       </div>
@@ -94,9 +86,9 @@ const SkillsSection = () => {
           {renderSectionTitle()}
           <div className="mt-10">{renderSkillColumn('BACKEND DEVELOPMENT', SKILLS.backend)}</div>
           <div className="mt-10">{renderSkillColumn('FRONTEND DEVELOPMENT', SKILLS.frontend)}</div>
-          <div className="flex flex-wrap mt-10">
-            <div>{renderSkillColumn('Other Skills', SKILLS.other)}</div>
-          </div>
+          <div className="mt-10">{renderSkillColumn('DATABASES', SKILLS.database)}</div>
+          <div className="mt-10">{renderSkillColumn('3rd Party Integration', SKILLS.integration)}</div>
+          <div className="mt-10">{renderSkillColumn('Other Skills', SKILLS.other)}</div>
         </div>
       </div>
     </section>
