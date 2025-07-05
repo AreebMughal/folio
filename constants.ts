@@ -42,7 +42,7 @@ export const EMAIL = 'areebarshad.m@gmail.com';
 export const SOCIAL_LINKS = {
   linkedin: 'https://www.linkedin.com/in/areeb-arshad27/',
   github: 'https://github.com/AreebMughal',
-  instagram: 'https://www.instagram.com/areebmughal770/',
+  instagram: 'https://www.instagram.com/areebmughal779/',
   facebook: 'https://www.facebook.com/areeb.arshad.5',
   twitter: 'https://twitter.com/areebmughal27'
 };
