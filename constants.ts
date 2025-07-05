@@ -2,7 +2,7 @@ export const METADATA = {
   title: 'Areeb Arshad | Portfolio',
   description:
     'I architect powerful backend systems that drive seamless user experiences, connecting logic, data, and design into scalable solutions.',
-  siteUrl: 'https://areeb.net/'
+  siteUrl: 'https://www.areebarshad.me/'
 };
 
 export const MENULINKS = [
