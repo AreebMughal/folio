@@ -222,3 +222,35 @@ footer {
 .section-title-sm {
   @apply uppercase tracking-widest text-gray-200 text-sm;
 }
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  90% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.my-name {
+  background-color: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%) !important;
+  color: transparent !important;
+}

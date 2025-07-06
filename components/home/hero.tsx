@@ -61,8 +61,20 @@ const HeroSection = React.memo(() => {
   const renderHeroContent = (): React.ReactNode => (
     <div className={HERO_STYLES.CONTENT}>
       <div className="md:mb-4 mb-2">
-        <h2 className="text-4xl seq">Hello 👋🏻</h2>
-        <h1 className="text-3xl seq">I&#39;m Areeb Arshad</h1>
+        <h2 className="text-4xl seq">
+          Hello{' '}
+          <span
+            className="inline-block text-5xl origin-bottom-right"
+            style={{
+              animation: 'wave 3s ease-in-out infinite'
+            }}
+          >
+            👋🏻
+          </span>
+        </h2>
+        <h1 className="text-3xl seq">
+          I&#39;m <span className="section-heading !text-4xl">Areeb Arshad</span>
+        </h1>
       </div>
       <p className="mb-4">
         <span className={HERO_STYLES.TYPED_SPAN} ref={typedSpanElement}></span>

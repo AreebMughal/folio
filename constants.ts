@@ -1,4 +1,4 @@
-import { SKILLS_ENUM } from 'enum';
+import { ESKILLS } from 'enum';
 
 export const METADATA = {
   title: 'Areeb Arshad | Portfolio',
@@ -67,7 +67,7 @@ export const PROJECTS: IProject[] = [
     description: 'A system to manage PAP/NIV for chronic sleep apnea patients',
     gradient: ['#1F6582', '#1ABCFE'],
     url: 'https://www.monitairhealth.com/',
-    tech: [SKILLS_ENUM.TYPESCRIPT, SKILLS_ENUM.NESTJS, SKILLS_ENUM.MONGODB, SKILLS_ENUM.NEXT, SKILLS_ENUM.TAILWIND]
+    tech: [ESKILLS.TYPESCRIPT, ESKILLS.NESTJS, ESKILLS.MONGODB, ESKILLS.NEXT, ESKILLS.TAILWIND]
   },
   {
     name: 'My QuickSteps',
@@ -76,26 +76,26 @@ export const PROJECTS: IProject[] = [
     description: 'Build Invoices, Track Payments, and Manage Clients with ease',
     gradient: ['#153BB9', '#0E2C8B'],
     url: 'https://app.my-quicksteps.com/',
-    tech: [SKILLS_ENUM.TYPESCRIPT, SKILLS_ENUM.NESTJS, SKILLS_ENUM.NEXT, SKILLS_ENUM.POSTGRESQL, SKILLS_ENUM.TAILWIND]
+    tech: [ESKILLS.TYPESCRIPT, ESKILLS.NESTJS, ESKILLS.NEXT, ESKILLS.POSTGRESQL, ESKILLS.TAILWIND]
+  },
+  {
+    name: 'WagerWise',
+    image: '/projects/wagerwise-dashboard.png',
+    blurImage: '/projects/blur/dlt-website-blur.jpg',
+    description: 'Scraped data from multiple sources to provide insights on sports',
+    gradient: ['#245B57', '#004741'],
+    url: 'https://wagerwise.app/',
+    tech: [ESKILLS.PYTHON, ESKILLS.FLASK, ESKILLS.SELENIUM, ESKILLS.MONGODB]
+  },
+  {
+    name: 'Opportunities Bridge',
+    image: '/projects/opportunities-bridge.png',
+    blurImage: '/projects/blur/dl-unify-blur.jpg',
+    description: 'A platform to connect students with opportunities in the diverse fields',
+    gradient: ['#003052', '#167187'],
+    url: 'https://opportunitiesbridge.com/',
+    tech: [ESKILLS.TYPESCRIPT, ESKILLS.NEXT, ESKILLS.REDUX, ESKILLS.TAILWIND, ESKILLS.MONGODB]
   }
-  // {
-  //   name: 'DLT Labs Website',
-  //   image: '/projects/dlt-website.jpg',
-  //   blurImage: '/projects/blur/dlt-website-blur.jpg',
-  //   description: 'Marketing site with an Internal CMS from scratch',
-  //   gradient: ['#245B57', '#004741'],
-  //   url: 'https://www.dltlabs.com/',
-  //   tech: ['figma', 'angular', 'gsap']
-  // },
-  // {
-  //   name: 'DL Unify',
-  //   image: '/projects/dl-unify.jpg',
-  //   blurImage: '/projects/blur/dl-unify-blur.jpg',
-  //   description: 'Built the application from zero to production 🚀',
-  //   gradient: ['#003052', '#167187'],
-  //   url: 'https://dlunify.com/',
-  //   tech: ['tailwind', 'angular', 'gsap', 'figma']
-  // },
   // {
   //   name: 'ngx-quill-upload',
   //   image: '/projects/ngx-quill-upload.jpg',
@@ -172,54 +172,47 @@ export const PROJECTS: IProject[] = [
 
 export const SKILLS = {
   backend: [
-    SKILLS_ENUM.JAVASCRIPT,
-    SKILLS_ENUM.TYPESCRIPT,
-    SKILLS_ENUM.NODEJS,
-    SKILLS_ENUM.EXPRESS,
-    SKILLS_ENUM.NESTJS,
-    SKILLS_ENUM.GRAPHQL,
-    SKILLS_ENUM.PYTHON,
-    SKILLS_ENUM.FLASK,
-    SKILLS_ENUM.SOCKETS
+    ESKILLS.JAVASCRIPT,
+    ESKILLS.TYPESCRIPT,
+    ESKILLS.NODEJS,
+    ESKILLS.EXPRESS,
+    ESKILLS.NESTJS,
+    ESKILLS.GRAPHQL,
+    ESKILLS.PYTHON,
+    ESKILLS.FLASK,
+    ESKILLS.SOCKETS
   ],
-  database: [SKILLS_ENUM.MONGODB, SKILLS_ENUM.POSTGRESQL, SKILLS_ENUM.MYSQL, SKILLS_ENUM.REDIS, SKILLS_ENUM.FIREBASE],
+  database: [ESKILLS.MONGODB, ESKILLS.POSTGRESQL, ESKILLS.MYSQL, ESKILLS.REDIS, ESKILLS.FIREBASE],
   frontend: [
-    SKILLS_ENUM.JAVASCRIPT,
-    SKILLS_ENUM.TYPESCRIPT,
-    SKILLS_ENUM.REACT,
-    SKILLS_ENUM.NEXT,
-    SKILLS_ENUM.REDUX,
-    SKILLS_ENUM.REACT_QUERY,
-    SKILLS_ENUM.TAILWIND,
-    SKILLS_ENUM.MUI,
-    SKILLS_ENUM.ANTD,
-    SKILLS_ENUM.SVG,
-    SKILLS_ENUM.HTML,
-    SKILLS_ENUM.CSS,
-    SKILLS_ENUM.SASS
+    ESKILLS.JAVASCRIPT,
+    ESKILLS.TYPESCRIPT,
+    ESKILLS.REACT,
+    ESKILLS.NEXT,
+    ESKILLS.REDUX,
+    ESKILLS.REACT_QUERY,
+    ESKILLS.TAILWIND,
+    ESKILLS.MUI,
+    ESKILLS.ANTD,
+    ESKILLS.SVG,
+    ESKILLS.HTML,
+    ESKILLS.CSS,
+    ESKILLS.SASS
   ],
-  cloud: [SKILLS_ENUM.AWS, SKILLS_ENUM.EC2, SKILLS_ENUM.LAMBDA, SKILLS_ENUM.GCP, SKILLS_ENUM.DOCKER],
+  cloud: [ESKILLS.AWS, ESKILLS.EC2, ESKILLS.LAMBDA, ESKILLS.GCP, ESKILLS.DOCKER],
   integration: [
-    SKILLS_ENUM.STRIPE,
-    SKILLS_ENUM.SENDGRID,
-    SKILLS_ENUM.TWILIO,
-    SKILLS_ENUM.AWS_LAMBDA,
-    SKILLS_ENUM.AWS_SNS,
-    SKILLS_ENUM.AWS_S3,
-    SKILLS_ENUM.AWS_SES,
-    SKILLS_ENUM.AWS_SQS
+    ESKILLS.STRIPE,
+    ESKILLS.SENDGRID,
+    ESKILLS.TWILIO,
+    ESKILLS.AWS_LAMBDA,
+    ESKILLS.AWS_SNS,
+    ESKILLS.AWS_S3,
+    ESKILLS.AWS_SES,
+    ESKILLS.AWS_SQS
   ],
-  other: [
-    SKILLS_ENUM.GIT,
-    SKILLS_ENUM.GITHUB,
-    SKILLS_ENUM.POSTMAN,
-    SKILLS_ENUM.JIRA,
-    SKILLS_ENUM.NGINX,
-    SKILLS_ENUM.CLICKUP
-  ]
+  other: [ESKILLS.GIT, ESKILLS.GITHUB, ESKILLS.POSTMAN, ESKILLS.JIRA, ESKILLS.NGINX, ESKILLS.CLICKUP, ESKILLS.SELENIUM]
 };
 
-export const SKILLS_MAP: Record<SKILLS_ENUM, string> = {
+export const SKILLS_MAP: Record<ESKILLS, string> = {
   javascript: 'JavaScript',
   typescript: 'TypeScript',
   nodejs: 'Node.js',
@@ -265,7 +258,8 @@ export const SKILLS_MAP: Record<SKILLS_ENUM, string> = {
   gcp: 'Google Cloud',
   jira: 'Jira',
   nginx: 'Nginx',
-  clickup: 'ClickUp'
+  clickup: 'ClickUp',
+  selenium: 'Selenium'
 };
 
 export enum Branch {
@@ -561,4 +555,4 @@ export interface BranchNode {
   type: NodeTypes.CONVERGE | NodeTypes.DIVERGE;
 }
 
-export const GTAG = 'UA-163844688-1';
+export const GTAG = 'GTM-KTT7MKMS';
