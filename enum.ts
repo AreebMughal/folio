@@ -1,4 +1,4 @@
-export enum SKILLS_ENUM {
+export enum ESKILLS {
   // Backend
   JAVASCRIPT = 'javascript',
   TYPESCRIPT = 'typescript',
@@ -60,5 +60,6 @@ export enum SKILLS_ENUM {
   POSTMAN = 'postman',
   JIRA = 'jira',
   NGINX = 'nginx',
-  CLICKUP = 'clickup'
+  CLICKUP = 'clickup',
+  SELENIUM = 'selenium'
 }
