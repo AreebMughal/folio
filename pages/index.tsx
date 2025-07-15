@@ -75,7 +75,7 @@ export default function Home() {
           <ProjectsSection isDesktop={isDesktop} />
           <QuoteSection />
           <SkillsSection />
-          {/* <TimelineSection isDesktop={isDesktop} /> */}
+          <TimelineSection isDesktop={isDesktop} />
           <CollaborationSection />
           <Footer />
         </main>
