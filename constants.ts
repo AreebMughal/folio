@@ -44,9 +44,9 @@ export const EMAIL = 'areebarshad.m@gmail.com';
 export const SOCIAL_LINKS = {
   linkedin: 'https://www.linkedin.com/in/areeb-arshad27/',
   github: 'https://github.com/AreebMughal',
-  instagram: 'https://www.instagram.com/areebmughal779/',
-  facebook: 'https://www.facebook.com/areeb.arshad.5',
-  twitter: 'https://twitter.com/areebmughal27'
+  instagram: 'https://www.instagram.com/areebmughal779/'
+  // facebook: 'https://www.facebook.com/areeb.arshad.5',
+  // twitter: 'https://twitter.com/areebmughal27'
 };
 
 export interface IProject {
@@ -61,10 +61,10 @@ export interface IProject {
 
 export const PROJECTS: IProject[] = [
   {
-    name: 'Monitair - Health Care',
-    image: '/projects/monitair.png',
+    name: 'MDDS - Health Care',
+    image: '/projects/health-care.png',
     blurImage: '/projects/blur/figgen-blur.jpg',
-    description: 'A system to manage PAP/NIV for chronic sleep apnea patients',
+    description: 'A HIPAA-compliant FDA registered system to manage PAP/NIV for chronic sleep apnea patients',
     gradient: ['#1F6582', '#1ABCFE'],
     url: 'https://www.monitairhealth.com/',
     tech: [ESKILLS.TYPESCRIPT, ESKILLS.NESTJS, ESKILLS.MONGODB, ESKILLS.NEXT, ESKILLS.TAILWIND]
@@ -96,78 +96,6 @@ export const PROJECTS: IProject[] = [
     url: 'https://opportunitiesbridge.com/',
     tech: [ESKILLS.TYPESCRIPT, ESKILLS.NEXT, ESKILLS.REDUX, ESKILLS.TAILWIND, ESKILLS.MONGODB]
   }
-  // {
-  //   name: 'ngx-quill-upload',
-  //   image: '/projects/ngx-quill-upload.jpg',
-  //   blurImage: '/projects/blur/ngx-quill-upload-blur.jpg',
-  //   description: 'NPM Package for Quill JS uploads from Angular',
-  //   gradient: ['#3A0000', '#771E1E'],
-  //   url: 'https://www.npmjs.com/package/ngx-quill-upload',
-  //   tech: ['npm', 'angular', 'typescript']
-  // },
-  // {
-  //   name: 'Huminos website',
-  //   image: '/projects/huminos.jpg',
-  //   blurImage: '/projects/blur/huminos-blur.jpg',
-  //   description: 'Marketing site for Huminos bots for workplace by facebook',
-  //   gradient: ['#17007B', '#3A2C79'],
-  //   url: 'https://bots.huminos.com/',
-  //   tech: ['javascript', 'sass', 'svg', 'gulp']
-  // },
-  // {
-  //   name: 'AKGEC - College Website',
-  //   image: '/projects/akgec.jpg',
-  //   blurImage: '/projects/blur/akgec-blur.jpg',
-  //   description: 'Contributed in overall design and development',
-  //   gradient: ['#5E4C06', '#746528'],
-  //   url: 'https://www.akgec.ac.in/',
-  //   tech: ['javascript', 'html', 'css']
-  // },
-  // {
-  //   name: 'Alpha Aesthetics',
-  //   image: '/projects/alpha.jpg',
-  //   blurImage: '/projects/blur/alpha-blur.jpg',
-  //   description: 'Designed and developed the platform',
-  //   gradient: ['#172839', '#334659'],
-  //   url: 'https://alpha-aesthetics.ayushsingh.net/',
-  //   tech: ['illustrator', 'javascript', 'angular']
-  // },
-  // {
-  //   name: 'Amantrya - Polling Web App',
-  //   image: '/projects/farewell18.jpg',
-  //   blurImage: '/projects/blur/farewell18-blur.jpg',
-  //   description: 'Dark mode dated from 2017 🔥',
-  //   gradient: ['#142D46', '#2E4964'],
-  //   url: 'https://farewell18.ayushsingh.net/',
-  //   tech: ['javascript', 'html', 'css']
-  // },
-  // {
-  //   name: 'BDC 2018 Web Portal',
-  //   image: '/projects/bdc18.jpg',
-  //   blurImage: '/projects/blur/bdc18-blur.jpg',
-  //   description: 'Built the portal from zero to production 🚀',
-  //   gradient: ['#470700', '#712A23'],
-  //   url: 'https://bdc2018.ayushsingh.net/',
-  //   tech: ['javascript', 'html', 'css']
-  // },
-  // {
-  //   name: 'Scrolls 2017 - Website',
-  //   image: '/projects/scrolls.jpg',
-  //   blurImage: '/projects/blur/scrolls-blur.jpg',
-  //   description: 'Built the portal from zero to production 🚀',
-  //   gradient: ['#685506', '#7B6921'],
-  //   url: 'https://scrolls-17.ayushsingh.net/',
-  //   tech: ['angular', 'html', 'css']
-  // },
-  // {
-  //   name: 'Cardize - Visiting Cards',
-  //   image: '/projects/cardize.jpg',
-  //   blurImage: '/projects/blur/cardize-blur.jpg',
-  //   description: 'First web project! Custom visiting card generator',
-  //   gradient: ['#552A04', '#614023'],
-  //   url: 'https://cardize.ayushsingh.net/',
-  //   tech: ['javascript', 'html', 'css']
-  // }
 ];
 
 export const SKILLS = {
@@ -281,14 +209,14 @@ export enum ItemSize {
 export const TIMELINE: Array<TimelineNodeV2> = [
   {
     type: NodeTypes.CHECKPOINT,
-    title: '2025',
+    title: '2026',
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: 'Software Engineer - Full Stack',
+    title: 'Senior Software Engineer - Full Stack',
     size: ItemSize.SMALL,
     subtitle: 'Worked on microservices and frontend for a health-care platform',
     image: '/timeline/brackets.svg',
